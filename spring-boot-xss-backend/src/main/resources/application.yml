@@ -1,0 +1,5 @@
+server.port: 8086
+
+client-details: 
+    client-id: my-trusted-client
+    secret: secret
