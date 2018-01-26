@@ -39,7 +39,9 @@ public class DefaultJsonDeserializer extends JsonDeserializer<String>implements 
     }
     private String unescapeUntilNoHtmlEntityFound(final String value){
         String unescaped = unescapeEntities(value, true);
-        if ( !unescaped.equals(value) ) return unescapeUntilNoHtmlEntityFound(unescaped);
-        else                            return unescaped;
+        if ( !unescaped.equals(value) ) 
+        	return unescapeUntilNoHtmlEntityFound(unescaped);
+        else  
+        	return unescaped;
     }
 }

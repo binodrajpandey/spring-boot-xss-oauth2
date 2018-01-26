@@ -12,10 +12,10 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 
 @SpringBootApplication
 @EnableConfigurationProperties(ClientDetails.class)
-public class SpringBootOauth2Application {
+public class SpringBootXSSApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootOauth2Application.class, args);
+		SpringApplication.run(SpringBootXSSApplication.class, args);
 	}
         @Autowired
         public void authenticationManager(AuthenticationManagerBuilder builder, UserRepository repo) throws Exception{
